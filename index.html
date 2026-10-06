@@ -3,378 +3,201 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jay Nathani — Site Reliability Engineer</title>
-  <meta name="description" content="Jay Nathani is a Senior Site Reliability Engineer at CarGurus and 3× AWS certified. His career runs from silicon and industrial IoT to cloud infrastructure and reliability.">
+  <title>Jay Nathani — Senior Site Reliability Engineer</title>
+  <meta name="description" content="Jay Nathani is a Senior Site Reliability Engineer at CarGurus with nearly a decade in cloud infrastructure, DevOps and SRE. His current work is on reliability for AI and agentic systems.">
   <meta name="author" content="Jay Nathani">
-  <meta name="theme-color" content="#05070a">
-  <meta property="og:title" content="Jay Nathani — Site Reliability Engineer">
-  <meta property="og:description" content="From silicon to the cloud, and keeping it all up.">
-  <meta property="og:image" content="https://jaynathani.github.io/img/my-pic.jpg">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='5' y='5' width='22' height='22' rx='3' fill='%230b0e13' stroke='%23ec8c4e' stroke-width='2'/><path d='M9 1v4M16 1v4M23 1v4M9 27v4M16 27v4M23 27v4M1 9h4M1 16h4M1 23h4M27 9h4M27 16h4M27 23h4' stroke='%23ec8c4e' stroke-width='2'/></svg>">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:title" content="Jay Nathani — Senior Site Reliability Engineer">
+  <meta property="og:description" content="Working out what reliability means for AI systems.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231c1c1a'/><text x='16' y='22.5' font-family='Georgia,serif' font-size='17' text-anchor='middle' fill='%23f6f5f1'>JN</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- The live circuit board behind everything -->
-  <canvas id="board" aria-hidden="true"></canvas>
-  <div class="vignette" aria-hidden="true"></div>
-  <nav class="nodes" aria-label="Board navigation">
-    <a class="node" data-node="journey" href="#journey">Journey</a>
-    <a class="node" data-node="projects" href="#projects">Projects</a>
-    <a class="node" data-node="stack" href="#stack">Stack</a>
-    <a class="node" data-node="lab" href="#lab">Lab</a>
-    <a class="node" data-node="contact" href="#contact">Contact</a>
-  </nav>
-
-  <header class="topbar">
-    <a class="mark" href="#top" aria-label="Jay Nathani, back to top">
-      <span class="mark-chip" aria-hidden="true">JN</span>
-      <span class="mark-name">Jay Nathani</span>
-    </a>
-    <nav class="toplinks" aria-label="Primary">
-      <a href="#journey">Journey</a>
-      <a href="#projects">Projects</a>
-      <a href="#stack">Stack</a>
-      <a href="#lab">Lab</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="btn btn-small" href="Jay-Nathani-Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="#top">Jay Nathani</a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#focus">Focus</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <aside class="rail" aria-hidden="true">
-    <ol>
-      <li data-rail="3"><b>L3</b><span>Reliability</span></li>
-      <li data-rail="2"><b>L2</b><span>Cloud</span></li>
-      <li data-rail="1"><b>L1</b><span>Edge / IoT</span></li>
-      <li data-rail="0" class="on"><b>L0</b><span>Silicon</span></li>
-    </ol>
-  </aside>
-
-  <div class="hud" aria-hidden="true">
-    <span>BOARD JN-01 · REV 2026</span>
-    <span>ZOOM <b id="hud-zoom">1.00</b>×</span>
-    <span>X <b id="hud-x">+0000</b> Y <b id="hud-y">+0000</b></span>
-  </div>
-
   <main id="main">
-    <!-- ===== Hero ===== -->
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <p class="tag"><span class="led" aria-hidden="true"></span>Senior Site Reliability Engineer · CarGurus</p>
-        <h1 class="name" aria-label="Jay Nathani"><span class="line">Jay</span><span class="line">Nathani</span></h1>
-        <p class="hero-sub">From silicon to the cloud, and keeping it all up.</p>
-        <p class="hero-lede">I studied electronics and embedded systems, then built industrial IoT, then built cloud infrastructure as code. Today I keep large-scale systems reliable at CarGurus. My current focus is teaching chaos engineering to think with AI.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="Jay-Nathani-Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
-          <a class="btn" href="https://www.linkedin.com/in/jaynathani" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a class="btn" href="https://github.com/jaynathani" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
+    <!-- Intro -->
+    <section class="intro wrap" id="top">
+      <p class="eyebrow">Senior Site Reliability Engineer · CarGurus</p>
+      <h1>Making complex systems dependable, and working out what reliability means for <em>AI&nbsp;systems</em>.</h1>
+      <div class="intro-body">
+        <p>I've spent nearly a decade in cloud infrastructure, DevOps and site reliability engineering, across AWS, GCP and Azure. These days I focus on systems that don't behave deterministically, such as LLM inference and multi-agent workflows, and on how to make them as dependable as the infrastructure beneath them.</p>
+        <ul class="links">
+          <li><a href="Jay-Nathani-Resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
+          <li><a href="https://www.linkedin.com/in/jaynathani/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/jaynathani" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:jaynathani@gmail.com">Email</a></li>
+        </ul>
       </div>
-      <p class="hint" aria-hidden="true"><span>Move across the board</span><span class="sep">·</span><span>Scroll to zoom out</span></p>
+      <dl class="facts">
+        <div><dt>Experience</dt><dd>Nearly 10 years</dd></div>
+        <div><dt>Currently</dt><dd>Senior SRE, CarGurus</dd></div>
+        <div><dt>Certified</dt><dd>3× AWS</dd></div>
+        <div><dt>Based in</dt><dd>Boston area</dd></div>
+      </dl>
     </section>
 
-    <!-- ===== Spec sheet ===== -->
-    <section class="specs" aria-label="At a glance">
-      <div class="spec reveal">
-        <p class="spec-k">Cloud, DevOps &amp; SRE</p>
-        <p class="spec-v" data-count="9">9<small>+ yrs</small></p>
-        <p class="spec-n">Across four companies since 2017</p>
-      </div>
-      <div class="spec reveal">
-        <p class="spec-k">AWS certified</p>
-        <p class="spec-v" data-count="3">3<small>×</small></p>
-        <p class="spec-n">DevOps Pro · Solutions Architect · Developer</p>
-      </div>
-      <div class="spec reveal">
-        <p class="spec-k">Clouds shipped on</p>
-        <p class="spec-v">AWS<small>·</small>GCP<small>·</small>Azure</p>
-        <p class="spec-n">Cloud-agnostic by design</p>
-      </div>
-      <div class="spec reveal">
-        <p class="spec-k">Postmortem authoring</p>
-        <p class="spec-v">hrs<small>→</small>min</p>
-        <p class="spec-n">With a custom Claude skill I built</p>
+    <!-- Focus -->
+    <section class="section wrap" id="focus">
+      <h2 class="label">Current focus</h2>
+      <div class="content">
+        <p class="lead">Classic SRE assumes a system does the same thing twice. AI systems don't. My recent work adapts reliability practice to that reality.</p>
+        <ol class="focus-list">
+          <li>
+            <h3>Agentic Chaos Engineering</h3>
+            <p>Injecting semantic faults into multi-agent workflows to find the failure modes scripted chaos experiments can't reach.</p>
+          </li>
+          <li>
+            <h3>Safety invariants</h3>
+            <p>Frameworks that set hard, deterministic blast-radius limits on what automated fixes are allowed to do.</p>
+          </li>
+          <li>
+            <h3>Reliable LLM inference</h3>
+            <p>Token-aware load balancing and semantic SLOs for distributed inference infrastructure.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ===== Journey ===== -->
-    <section class="section" id="journey">
-      <header class="section-head reveal">
-        <p class="kicker">// 01 · Journey</p>
-        <h2>The stack, layer by layer.</h2>
-        <p class="section-lede">Every layer I've worked on sits on the one below it. Keep scrolling and the board zooms out with the story.</p>
-      </header>
-
-      <!-- L0 -->
-      <article class="layer" data-layer="0">
-        <div class="layer-id reveal">
-          <span class="layer-code">L0</span>
-          <h3>Silicon</h3>
-          <p class="layer-when">Where it started</p>
-        </div>
-        <div class="layer-body">
-          <div class="card reveal">
-            <p class="card-top"><span>Education</span></p>
-            <h4>M.S. Computer Engineering</h4>
-            <p class="org">Stony Brook University, SUNY</p>
-            <h4 class="mt">B.E. Electronics &amp; Communication</h4>
-            <p class="org">Sardar Vallabhbhai Patel Institute of Technology, GTU</p>
+    <!-- Experience -->
+    <section class="section wrap" id="experience">
+      <h2 class="label">Experience</h2>
+      <div class="content">
+        <article class="job">
+          <p class="when">2021 — Present</p>
+          <div>
+            <h3>Senior Site Reliability Engineer</h3>
+            <p class="org">CarGurus · Cambridge, MA</p>
+            <ul>
+              <li>Leading the use of AI in reliability work, including the shift in fault testing toward Agentic Chaos Engineering for non-deterministic systems.</li>
+              <li>Built a Claude skill that drafts blameless postmortems, cutting authoring time from hours to minutes.</li>
+              <li>Architected Prometheus federation with Thanos, and was a core Platform-team contributor to the migration from on-prem servers to AWS.</li>
+              <li>Own the incident response process and on-call practice, and work with engineering teams to get new services production-ready.</li>
+            </ul>
           </div>
-          <div class="card reveal">
-            <p class="card-top"><span>Hands-on</span></p>
-            <p>I started with logic analyzers and datasheets: SystemVerilog, x86 assembly, SPI and UART, and RTOS work on ARM Cortex and PSoC. I built a sound-operated stopwatch, a wireless haptic panel, and hardware/software partitioning on a Cypress PSoC.</p>
-            <ul class="chips"><li>SystemVerilog</li><li>x86 ASM</li><li>SPI / UART</li><li>RTOS</li><li>ARM Cortex</li><li>PSoC</li></ul>
-          </div>
-        </div>
-      </article>
+        </article>
 
-      <!-- L1 -->
-      <article class="layer" data-layer="1">
-        <div class="layer-id reveal">
-          <span class="layer-code">L1</span>
-          <h3>Edge / IoT</h3>
-          <p class="layer-when">2017 – 2019</p>
-        </div>
-        <div class="layer-body">
-          <div class="card role reveal">
-            <p class="card-top"><span>Granube Systems · Dallas, TX</span><span>Jul 2017 – Mar 2019</span></p>
-            <h4>Cloud DevOps Engineer / Software Engineer</h4>
-            <ul class="points">
-              <li>Architected and built an <strong>AWS cloud-native, cross-platform mobile app</strong> to configure, monitor and control Siemens' industrial IoT infrastructure (Sm@rt Gear).</li>
-              <li>Built pub/sub over an external TCP socket, plus an internal MessagingCenter data flow, to stream live data from the server.</li>
-              <li>Kept data in sync between tightly constrained PLC storage and an on-device SQLite database.</li>
-              <li>Wrote a <strong>custom Terraform provider</strong> that exposes the full API as resources.</li>
+        <article class="job">
+          <p class="when">2019 — 2021</p>
+          <div>
+            <h3>Senior DevOps Engineer</h3>
+            <p class="org">Tamr · Cambridge, MA</p>
+            <ul>
+              <li>Designed layered, interconnected Terraform modules for AWS infrastructure (EMR/HBase, IAM, S3, DynamoDB, networking and compute), and wrote the design docs and module guidelines other teams followed.</li>
+              <li>Introduced Atlantis so teams could run Terraform plan and apply from pull requests, and brought the company's PagerDuty configuration under Terraform.</li>
+              <li>Built machine image and configuration pipelines with Packer, Ansible and Puppet.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <p class="when">2019</p>
+          <div>
+            <h3>Cloud DevOps Engineer</h3>
+            <p class="org">Genie Company (Overhead Door Corp.) · Dallas, TX</p>
+            <ul>
+              <li>Architected a multi-region disaster-recovery environment that refreshed daily and scaled with traffic.</li>
+              <li>Migrated a Ruby application to AWS Elastic Beanstalk, and built the Lambda backends and API test suites for the Alexa and Google Home integrations.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <p class="when">2017 — 2019</p>
+          <div>
+            <h3>Cloud DevOps Engineer / Software Engineer</h3>
+            <p class="org">Granube Systems · Dallas, TX</p>
+            <ul>
+              <li>Architected an AWS-native, cross-platform mobile app for configuring and monitoring Siemens' Sm@rt Gear industrial IoT infrastructure, with live data streaming and PLC-to-device synchronization.</li>
+              <li>Wrote a custom Terraform provider that exposes the product's full API as resources.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="section wrap" id="writing">
+      <h2 class="label">Writing</h2>
+      <div class="content">
+        <a class="post" href="https://cargurus.dev/2022/11/23/prometheus-and-its-federation-through-thanos-at-cargurus-part-1/" target="_blank" rel="noopener">
+          <span class="post-meta">Revved, the CarGurus engineering blog · 2022</span>
+          <span class="post-title">Prometheus and its Federation through Thanos at CarGurus</span>
+          <span class="post-desc">A two-part series on running federated metrics across Kubernetes clusters in North America and Europe. It restarted CarGurus' public engineering blog.</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Expertise -->
+    <section class="section wrap" id="expertise">
+      <h2 class="label">Expertise</h2>
+      <div class="content">
+        <dl class="skills">
+          <div><dt>Reliability &amp; AI</dt><dd>Agentic AI, chaos engineering, Claude, incident response, SLOs</dd></div>
+          <div><dt>Infrastructure</dt><dd>AWS, GCP, Azure, Kubernetes, Docker, Terraform, HCP, Atlantis</dd></div>
+          <div><dt>Configuration</dt><dd>Ansible, Puppet, Packer</dd></div>
+          <div><dt>Observability</dt><dd>Prometheus, Thanos, Grafana, Honeycomb, Observe, SignalFx, PagerDuty</dd></div>
+          <div><dt>Languages</dt><dd>Python, Java, Bash, Ruby</dd></div>
+        </dl>
+
+        <div class="split">
+          <div>
+            <h3 class="sub">Certifications</h3>
+            <ul class="plain">
+              <li>AWS Certified DevOps Engineer — Professional <span>2019</span></li>
+              <li>AWS Certified Solutions Architect — Associate <span>2018</span></li>
+              <li>AWS Certified Developer — Associate <span>2017</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="sub">Education</h3>
+            <ul class="plain">
+              <li>M.S. Computer Engineering, Stony Brook University <span>2016</span></li>
+              <li>B.E. Electronics &amp; Communication, Sardar Vallabhbhai Patel Institute of Technology <span>2015</span></li>
             </ul>
           </div>
         </div>
-      </article>
 
-      <!-- L2 -->
-      <article class="layer" data-layer="2">
-        <div class="layer-id reveal">
-          <span class="layer-code">L2</span>
-          <h3>Cloud</h3>
-          <p class="layer-when">2019 – 2021</p>
-        </div>
-        <div class="layer-body">
-          <div class="card role reveal">
-            <p class="card-top"><span>Tamr · Cambridge, MA</span><span>Jul 2019 – Feb 2021</span></p>
-            <h4>Senior DevOps Engineer</h4>
-            <ul class="points">
-              <li>Architected <strong>multi-layered, interconnected Terraform modules</strong> for AWS: EMR/HBase, IAM, S3, DynamoDB, security groups and EC2.</li>
-              <li>Wrote design docs and coached engineers on other teams in Terraform module best practices.</li>
-              <li>Set up <strong>Atlantis</strong> so teams could run Terraform plan and apply from pull requests.</li>
-              <li>Built image and config pipelines with Ansible, Packer and Puppet, and <strong>imported the company's entire PagerDuty setup into Terraform</strong>.</li>
-            </ul>
-          </div>
-          <div class="card role reveal">
-            <p class="card-top"><span>Overhead Door Corp. — Genie Company · Dallas, TX</span><span>Apr – Jul 2019</span></p>
-            <h4>Cloud DevOps Engineer</h4>
-            <ul class="points">
-              <li>Architected a <strong>multi-region disaster-recovery environment</strong> that refreshed daily and scaled with traffic.</li>
-              <li>Migrated a Ruby web app onto AWS Elastic Beanstalk.</li>
-              <li>Built Lambda webhooks and fulfillment for the Alexa skill and Google Home action, with Groovy test suites and load tests for their REST APIs.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- L3 -->
-      <article class="layer" data-layer="3">
-        <div class="layer-id reveal">
-          <span class="layer-code">L3</span>
-          <h3>Reliability</h3>
-          <p class="layer-when">2021 – now</p>
-        </div>
-        <div class="layer-body">
-          <div class="card role current reveal">
-            <p class="card-top"><span><span class="led" aria-hidden="true"></span>CarGurus · Cambridge, MA</span><span>Mar 2021 – Present</span></p>
-            <h4>Senior Site Reliability Engineer</h4>
-            <ul class="points">
-              <li>Leading the move to <strong>AI-driven reliability</strong>, shifting fault testing toward <strong>Agentic Chaos Engineering (ACE)</strong> so it can handle non-deterministic system behavior.</li>
-              <li>Built a <strong>custom Claude skill that writes blameless postmortems</strong>, cutting authoring time from hours to minutes.</li>
-              <li>Architected <strong>Prometheus federation with Thanos</strong>, and one of the main Platform-team contributors to the <strong>on-prem to AWS migration</strong>.</li>
-              <li>Own the incident response process, take on-call shifts, and work with product teams to get new services production-ready.</li>
-              <li>Restarted CarGurus' public engineering blog, <em>Revved</em>, as its first contributor with a <a class="inline-link" href="https://cargurus.dev/2022/11/23/prometheus-and-its-federation-through-thanos-at-cargurus-part-1/" target="_blank" rel="noopener">two-part series on Thanos ↗</a>.</li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- ===== Projects ===== -->
-    <section class="section" id="projects">
-      <header class="section-head reveal">
-        <p class="kicker">// 02 · Projects</p>
-        <h2>Selected work.</h2>
-        <p class="section-lede">Systems I designed, built or took apart, from PLCs up to production observability.</p>
-      </header>
-
-      <div class="bento">
-        <article class="tile tile-xl reveal">
-          <p class="tile-ref">P-01 · CarGurus · Now</p>
-          <h3>Agentic Chaos Engineering</h3>
-          <p>Classic chaos experiments follow a script. Modern systems, especially ones with AI in the loop, don't behave deterministically. I'm researching and leading a shift toward AI agents that form hypotheses, inject faults and judge whether the system held up.</p>
-          <ul class="chips"><li>Chaos engineering</li><li>AI agents</li><li>Fault injection</li><li>Reliability</li></ul>
-          <svg class="tile-art" viewBox="0 0 200 120" aria-hidden="true"><path d="M0 60h40l10-30 14 60 12-44 10 28 8-14h106"/><circle cx="64" cy="90" r="3"/><circle cx="86" cy="74" r="3"/></svg>
-        </article>
-
-        <article class="tile tile-stat reveal">
-          <p class="tile-ref">P-02 · CarGurus</p>
-          <p class="big">hours<span>→</span>minutes</p>
-          <h3>Claude postmortem skill</h3>
-          <p>A custom Claude skill that turns incident timelines into blameless postmortems automatically.</p>
-        </article>
-
-        <article class="tile reveal">
-          <p class="tile-ref">P-03 · CarGurus</p>
-          <h3>Prometheus federation with Thanos</h3>
-          <p>A global, long-retention metrics layer across clusters. I also wrote the two-part <em>Revved</em> series about it.</p>
-          <a class="tile-link" href="https://cargurus.dev/2022/11/23/prometheus-and-its-federation-through-thanos-at-cargurus-part-1/" target="_blank" rel="noopener">Read part 1 on Revved ↗</a>
-          <ul class="chips"><li>Prometheus</li><li>Thanos</li><li>Observability</li></ul>
-        </article>
-
-        <article class="tile reveal">
-          <p class="tile-ref">P-04 · CarGurus</p>
-          <h3>On-prem → AWS migration</h3>
-          <p>One of the main Platform-team contributors to moving CarGurus production off its own servers and onto AWS.</p>
-          <ul class="chips"><li>AWS</li><li>Migration</li><li>Platform</li></ul>
-        </article>
-
-        <article class="tile reveal">
-          <p class="tile-ref">P-05 · Tamr</p>
-          <h3>Terraform platform</h3>
-          <p>A library of layered Terraform modules, Atlantis for plan and apply from pull requests, and PagerDuty imported as code.</p>
-          <ul class="chips"><li>Terraform</li><li>Atlantis</li><li>PagerDuty</li></ul>
-        </article>
-
-        <article class="tile reveal">
-          <p class="tile-ref">P-06 · Genie</p>
-          <h3>Multi-region disaster recovery</h3>
-          <p>A standby environment across AWS regions that refreshed daily and scaled with incoming traffic.</p>
-          <ul class="chips"><li>AWS</li><li>DR</li><li>Auto-scaling</li></ul>
-        </article>
-
-        <article class="tile tile-wide reveal">
-          <p class="tile-ref">P-07 · Granube × Siemens</p>
-          <h3>Sm@rt Gear industrial IoT app</h3>
-          <p>A cross-platform, AWS-backed mobile app for configuring and monitoring Siemens industrial hardware. Live data streams over pub/sub TCP, and state stays in sync between PLC storage and on-device SQLite.</p>
-          <ul class="chips"><li>IoT</li><li>AWS</li><li>PLC</li><li>SQLite</li><li>TCP pub/sub</li></ul>
-        </article>
-
-        <article class="tile reveal">
-          <p class="tile-ref">P-08 · Granube</p>
-          <h3>Custom Terraform provider</h3>
-          <p>Mapped an entire product API to Terraform resources, so it could be managed as code.</p>
-          <ul class="chips"><li>Terraform</li><li>API design</li></ul>
-        </article>
+        <p class="aside">I started out in embedded systems (ARM Cortex, PSoC, RTOS), and a couple of small browser games from that time still live here: <a href="NewGame/index.html">Arkanoid</a> and <a href="TicTacToe/index.html">Tic Tac Toe</a>.</p>
       </div>
     </section>
 
-    <!-- ===== Stack ===== -->
-    <section class="section" id="stack">
-      <header class="section-head reveal">
-        <p class="kicker">// 03 · Stack</p>
-        <h2>Bill of materials.</h2>
-        <p class="section-lede">The parts I build with, grouped the way a board is.</p>
-      </header>
-
-      <div class="bom reveal" role="table" aria-label="Skills">
-        <div class="bom-row bom-head" role="row"><span role="columnheader">Ref</span><span role="columnheader">Group</span><span role="columnheader">Parts</span></div>
-        <div class="bom-row" role="row"><span role="cell">U1</span><span role="cell">AWS</span><span role="cell">EC2 · S3 · VPC · IAM · Lambda · DynamoDB · EMR · Route 53 · CloudWatch · CloudTrail · Elastic Beanstalk · Systems Manager · Certificate Manager · Lex</span></div>
-        <div class="bom-row" role="row"><span role="cell">U2</span><span role="cell">GCP</span><span role="cell">GKE · Compute · IAM · GCS · GCR · Dataproc · Stackdriver</span></div>
-        <div class="bom-row" role="row"><span role="cell">U3</span><span role="cell">Infra as code</span><span role="cell">Terraform · Atlantis · Ansible · Puppet · Packer</span></div>
-        <div class="bom-row" role="row"><span role="cell">U4</span><span role="cell">Containers</span><span role="cell">Docker · Kubernetes</span></div>
-        <div class="bom-row" role="row"><span role="cell">U5</span><span role="cell">Observability</span><span role="cell">Prometheus · Thanos · SignalFx · PagerDuty</span></div>
-        <div class="bom-row" role="row"><span role="cell">U6</span><span role="cell">AI</span><span role="cell">Claude · agent workflows · agentic chaos engineering</span></div>
-        <div class="bom-row" role="row"><span role="cell">U7</span><span role="cell">Languages</span><span role="cell">Python · Bash · Ruby · Java · Groovy</span></div>
-        <div class="bom-row" role="row"><span role="cell">U8</span><span role="cell">Embedded</span><span role="cell">C · SystemVerilog · x86 assembly · SPI · UART · RTOS</span></div>
-      </div>
-
-      <div class="certs">
-        <div class="cert reveal">
-          <span class="cert-chip" aria-hidden="true">AWS</span>
-          <div><h3>DevOps Engineer — Professional</h3><p>Nov 2019</p></div>
-        </div>
-        <div class="cert reveal">
-          <span class="cert-chip" aria-hidden="true">AWS</span>
-          <div><h3>Solutions Architect — Associate</h3><p>Jan 2018</p></div>
-        </div>
-        <div class="cert reveal">
-          <span class="cert-chip" aria-hidden="true">AWS</span>
-          <div><h3>Developer — Associate</h3><p>Aug 2017</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Lab ===== -->
-    <section class="section" id="lab">
-      <header class="section-head reveal">
-        <p class="kicker">// 04 · Lab</p>
-        <h2>Off the clock.</h2>
-        <p class="section-lede">Early projects that are still fun. The two games run right here in your browser.</p>
-      </header>
-
-      <div class="lab-grid">
-        <button class="lab-card reveal" type="button" data-embed="NewGame/index.html" data-title="Arkanoid" data-game>
-          <img src="img/arkanoid.png" alt="" loading="lazy">
-          <span class="lab-meta"><b>Arkanoid</b><span>▶ Play · Canvas / JS</span></span>
-        </button>
-        <button class="lab-card reveal" type="button" data-embed="TicTacToe/index.html" data-title="Tic Tac Toe" data-game>
-          <img src="img/tictactoe.jpg" alt="" loading="lazy">
-          <span class="lab-meta"><b>Tic Tac Toe</b><span>▶ Play · Canvas / JS</span></span>
-        </button>
-        <button class="lab-card reveal" type="button" data-embed="https://www.youtube-nocookie.com/embed/e9jnGf6uzl4?autoplay=1" data-title="Sound-operated stopwatch">
-          <img src="img/stopwatch.jpeg" alt="" loading="lazy">
-          <span class="lab-meta"><b>Sound-operated stopwatch</b><span>▶ Demo · Embedded</span></span>
-        </button>
-        <button class="lab-card reveal" type="button" data-embed="https://www.youtube-nocookie.com/embed/YiVh28m9-mE?autoplay=1" data-title="Student Management System">
-          <img src="img/stu_mng_sys.jpg" alt="" loading="lazy">
-          <span class="lab-meta"><b>Student Management System</b><span>▶ Demo · Java / Spring</span></span>
-        </button>
-      </div>
-
-      <p class="interests reveal"><span class="kicker">When I'm away from a terminal:</span> biking · hiking · traveling · cooking · Tae Kwon Do · kickboxing</p>
-    </section>
-
-    <!-- ===== Contact ===== -->
-    <section class="section contact" id="contact">
-      <div class="contact-card reveal">
-        <img class="portrait" src="img/my-pic.jpg" alt="Jay Nathani" width="640" height="640" loading="lazy">
-        <div>
-          <p class="kicker">// 05 · Contact</p>
-          <h2>Let's build something that stays up.</h2>
-          <p class="section-lede">I'm always happy to talk about reliability, chaos engineering, platform work, or AI in operations.</p>
-          <a class="email" href="mailto:jaynathani@gmail.com">jaynathani@gmail.com</a>
-          <div class="cta">
-            <a class="btn" href="https://www.linkedin.com/in/jaynathani" target="_blank" rel="noopener">LinkedIn ↗</a>
-            <a class="btn" href="https://github.com/jaynathani" target="_blank" rel="noopener">GitHub ↗</a>
-            <a class="btn" href="Jay-Nathani-Resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
-          </div>
-          <p class="where"><span class="led" aria-hidden="true"></span>Based in the Boston area</p>
-        </div>
+    <!-- Contact -->
+    <section class="section wrap" id="contact">
+      <h2 class="label">Contact</h2>
+      <div class="content">
+        <p class="lead">I'm glad to talk about reliability, chaos engineering and running AI systems in production.</p>
+        <a class="email" href="mailto:jaynathani@gmail.com">jaynathani@gmail.com</a>
+        <ul class="links">
+          <li><a href="https://www.linkedin.com/in/jaynathani/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/jaynathani" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="Jay-Nathani-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span>© <span id="year">2026</span> Jay Nathani</span>
-    <span>Hand-routed in plain HTML, CSS &amp; canvas</span>
+  <footer class="wrap site-footer">
+    <p>© <span id="year">2026</span> Jay Nathani</p>
   </footer>
 
-  <dialog class="viewer" aria-labelledby="viewer-title">
-    <div class="viewer-bar">
-      <h3 id="viewer-title">Project</h3>
-      <button class="viewer-close" type="button" aria-label="Close">✕</button>
-    </div>
-    <div class="viewer-frame"></div>
-  </dialog>
-
-  <script src="assets/board.js"></script>
   <script src="assets/main.js"></script>
 </body>
 </html>
